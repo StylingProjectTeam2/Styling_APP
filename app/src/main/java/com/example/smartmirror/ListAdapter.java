@@ -109,7 +109,7 @@ public class ListAdapter extends BaseAdapter {
         });
 
         //virtual fitting
-        Button fitting = (Button) convertView.findViewById(R.id.virtualFitting);
+        ImageButton fitting = (ImageButton) convertView.findViewById(R.id.virtualFitting);
         fitting.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 String id = listItem.getID();
