@@ -22,7 +22,7 @@
         android:id="@+id/botNav"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@drawable/layout_style2"
+        android:background="@drawable/chalkboard"
         app:itemIconSize="25dp"
         app:itemIconTint="#ffffff"
         app:itemTextColor="#ffffff"
