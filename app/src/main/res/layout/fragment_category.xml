@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="45dp"
-        android:background="@drawable/layout_style2">
+        android:background="@drawable/chalkboard_texture">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -20,7 +20,7 @@
             android:textSize="25dp"
             android:gravity="bottom"
             android:textColor="#ffffff"
-            android:fontFamily="@font/neucharegular"
+            android:fontFamily="@font/cfmarieeve"
             />
     </LinearLayout>
 
@@ -28,7 +28,7 @@
         android:layout_width="fill_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:background="@drawable/layout_style2">
+        android:background="@drawable/chalkboard_texture">
         <Button
             app:backgroundTint = "@null"
             android:id="@+id/btn_dandy"
@@ -42,9 +42,9 @@
             android:scaleType="fitCenter"
             android:text="dandy"
             android:textStyle="bold"
-            android:textSize="13dp"
-            android:textColor="#a1c4fd"
-            android:fontFamily="@font/neucharegular"
+            android:textSize="10dp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/pwchalk"
             android:background="@drawable/btn_style2"
             android:includeFontPadding="false"/>
         <Button
@@ -60,9 +60,9 @@
             android:scaleType="fitCenter"
             android:text="formal"
             android:textStyle="bold"
-            android:textSize="13dp"
-            android:textColor="#a1c4fd"
-            android:fontFamily="@font/neucharegular"
+            android:textSize="10dp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/pwchalk"
             android:background="@drawable/btn_style2"
             android:includeFontPadding="false"/>
         <Button
@@ -78,9 +78,9 @@
             android:layout_marginBottom="3dp"
             android:scaleType="fitCenter"
             android:text="casaul"
-            android:textSize="13dp"
-            android:textColor="#a1c4fd"
-            android:fontFamily="@font/neucharegular"
+            android:textSize="10dp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/pwchalk"
             android:background="@drawable/btn_style2"
             android:includeFontPadding="false"/>
 
@@ -97,9 +97,9 @@
             android:layout_marginBottom="3dp"
             android:includeFontPadding="false"
             android:scaleType="fitCenter"
-            android:textSize="13dp"
-            android:textColor="#a1c4fd"
-            android:fontFamily="@font/neucharegular"
+            android:textSize="10dp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/pwchalk"
             android:background="@drawable/btn_style2"
             android:text="Street"
             android:textStyle="bold"/>
@@ -109,7 +109,7 @@
         android:layout_width="fill_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:background="@drawable/layout_style2">
+        android:background="@drawable/chalkboard_texture">
         <Button
             app:backgroundTint = "@null"
             android:id="@+id/btn_chic"
@@ -123,9 +123,9 @@
             android:scaleType="fitCenter"
             android:text="chic"
             android:textStyle="bold"
-            android:textSize="13dp"
-            android:textColor="#a1c4fd"
-            android:fontFamily="@font/neucharegular"
+            android:textSize="10dp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/pwchalk"
             android:background="@drawable/btn_style2"
             android:includeFontPadding="false"/>
         <Button
@@ -141,9 +141,9 @@
             android:scaleType="fitCenter"
             android:text="sport"
             android:textStyle="bold"
-            android:textSize="13dp"
-            android:textColor="#a1c4fd"
-            android:fontFamily="@font/neucharegular"
+            android:textSize="10dp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/pwchalk"
             android:background="@drawable/btn_style2"
             android:includeFontPadding="false"/>
         <Button
@@ -159,9 +159,9 @@
             android:scaleType="fitCenter"
             android:text="romantic"
             android:textStyle="bold"
-            android:textSize="13dp"
-            android:textColor="#a1c4fd"
-            android:fontFamily="@font/neucharegular"
+            android:textSize="10dp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/pwchalk"
             android:background="@drawable/btn_style2"
             android:includeFontPadding="false"/>
         <Button
@@ -178,9 +178,9 @@
             android:scaleType="fitCenter"
             android:text="girlish"
             android:textStyle="bold"
-            android:textSize="13dp"
-            android:textColor="#a1c4fd"
-            android:fontFamily="@font/neucharegular"
+            android:textSize="10dp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/pwchalk"
             android:background="@drawable/btn_style2"
             android:includeFontPadding="false"/>
     </LinearLayout>
