@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/chalkboard"
+    android:background="@drawable/layout_style2"
     tools:context=".ManualActivity">
 
     <TextView
@@ -29,7 +29,7 @@
         android:background="@drawable/btn_style3"
         android:fontFamily="@font/neucharegular"
         android:padding="30dp"
-        android:text="\n1. Smart Mirror can be operated through this application.\n\n 2. If you select the styling you want, you can see it in the Smart Mirror.\n\n3. If you want to know where to buy clothes in the online shopping mall styling, click the image to go to the sales site. \n\n4. You can take a picture with the smart mirror by pressing the button, and then smart mirror recommends the user's clothes."
+        android:text="\n1. Smart Mirror can be operated through this application.\n\n2. If you select the styling you want, you can see it in the Smart Mirror.\n\n3. If you want to know where to buy clothes in the online shopping mall styling, click the image to go to the sales site. \n\n4. You can take a picture with the smart mirror by pressing the button, and then smart mirror recommends the user's clothes."
         android:textColor="#FFFFFF"
         android:textSize="20dp"
         android:lineSpacingExtra="2dp"
