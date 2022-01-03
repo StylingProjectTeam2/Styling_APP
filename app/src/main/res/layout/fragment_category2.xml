@@ -8,7 +8,7 @@
     tools:context=".StylingActivity"
     android:padding="20dp"
     android:orientation="vertical"
-    android:background="@drawable/chalkboard">
+    android:background="@drawable/layout_style">
 
     <ListView
         android:id="@+id/categoryList"
