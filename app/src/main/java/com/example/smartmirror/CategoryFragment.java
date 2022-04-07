@@ -35,7 +35,7 @@ public class CategoryFragment extends Fragment {
     ListView categoryList;
     ListItem listItem;
     ListAdapter adapter;
-    private static String IP_ADDRESS="52.79.59.24";
+    private String IP_ADDRESS=getString(R.string.IP);
     String temp;
     String TAG="php";
     StylingItemAdapter s_adapter;

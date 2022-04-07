@@ -37,7 +37,7 @@ public class CategoryFragment2 extends Fragment {
     ListItem listItem;
     UserRecAdapter adapter;
 
-    private static String IP_ADDRESS="52.79.59.24";
+    private String IP_ADDRESS=getString(R.string.IP);
     String TAG="php";
 
     @Nullable

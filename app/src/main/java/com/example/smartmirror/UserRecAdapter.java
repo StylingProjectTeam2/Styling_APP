@@ -76,7 +76,7 @@ public class UserRecAdapter extends BaseAdapter {
                 String address;
                 if(!listItem.getOuter().equals(""))
                 {
-                    address="http://52.79.59.24/user_clothes_fitting.php?CASE=3&OUTER="+outer+"&TOP="+top+"&BOTTOM="+bottom;
+                    address="http://52.79.59.24/user_clothes_fitting.php?CASE=3&OUTER="+outer+"&TOP="+top+"&BOTTOM="+bottom; // TODO: user_clothes_fitting.php 파일이 없음,,,,,,,,,
                 }
                 else
                 {
