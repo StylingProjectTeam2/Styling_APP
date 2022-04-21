@@ -7,7 +7,7 @@ import java.net.Socket;
 
 public class SocketHandler {
     private static Socket socket = null;
-    private static String ip = "172.16.17.242";
+    private static String ip = "172.16.17.242"; // TODO: smart mirror IP address
 
     public static Socket getSocket(){
         return socket;

@@ -38,6 +38,7 @@ import java.util.concurrent.ExecutionException;
 
 public class ListAdapter extends BaseAdapter {
 
+
     private Context context;
     private ArrayList<ListItem> listItems = new ArrayList<ListItem>();
 
@@ -56,6 +57,8 @@ public class ListAdapter extends BaseAdapter {
     String styling; // table name
 
     String rec_case; // musinsa or user's clothes
+
+    private String IP_ADDRESS=context.getString(R.string.IP);
 
     FragmentManager fragmentManager;
     private FragmentTransaction transaction;
@@ -113,8 +116,8 @@ public class ListAdapter extends BaseAdapter {
         fitting.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 String id = listItem.getID();
-                String address="http://52.79.59.24/fitting.php?"; // TODO: 테스트용
-                //String address="http://52.79.59.24/virtualFitting.php?STYLING="+styling+"&ID="+id; TODO: 실제 사용해야하는 코드
+                String address="http://"+IP_ADDRESS+"/fitting.php?"; // TODO: 테스트용
+                //String address="http://"+IP_ADDRESS+"/virtualFitting.php?STYLING="+styling+"&ID="+id; TODO: 실제 사용해야하는 코드
 
                 virtualfittingThread fitting_thread = new virtualfittingThread();
 //

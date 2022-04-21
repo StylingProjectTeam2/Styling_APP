@@ -31,17 +31,6 @@ public class ItemFragment extends Fragment {
         itemList = view.findViewById(R.id.itemList);
         listItem = new ListItem();
         adapter = new ListAdapter(getContext());
-        Drawable pic1 = getResources().getDrawable(R.drawable.img6);
-        Drawable pic2 = getResources().getDrawable(R.drawable.img7);
-        Drawable pic3 = getResources().getDrawable(R.drawable.img8);
-        Drawable pic4 = getResources().getDrawable(R.drawable.img9);
-        Drawable pic5 = getResources().getDrawable(R.drawable.img10);
-
-//        adapter.addItem(pic1, "https://www.youtube.com/watch?v=InZ_XAs0-nM");
-//        adapter.addItem(pic2,"https://www.youtube.com/watch?v=rod11dE9JaA");
-//        adapter.addItem(pic3, "https://www.youtube.com/watch?v=Q-iEfzaikBI");
-//        adapter.addItem(pic4, "https://www.youtube.com/watch?v=GA9GigGuf24");
-//        adapter.addItem(pic5, "https://www.youtube.com/watch?v=y5paOQU66hg");
 
         itemList.setAdapter(adapter);
 

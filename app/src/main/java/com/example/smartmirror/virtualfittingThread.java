@@ -27,7 +27,7 @@ public class virtualfittingThread extends AsyncTask<String,String,String>{
     private String output_message;
     private String input_message;
     Socket socket;
-    private static String ip="192.9.116.211";
+    private static String ip="192.9.116.211"; //TODO: have to set smart mirror IP address and port number
 //    private static String ip="192.9.116.162";
     //private static String ip = "192.9.116.43";
     private int port;

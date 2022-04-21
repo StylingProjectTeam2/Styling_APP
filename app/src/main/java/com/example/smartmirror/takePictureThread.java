@@ -12,7 +12,7 @@ public class takePictureThread extends AsyncTask<String,String,Void> {
     private String output_message;
     private String input_message;
     Socket socket;
-    private static String ip="192.9.116.221";
+    private static String ip="192.9.116.221"; // TODO: have to set smart mirror IP address and port number
     private int port;
     private DataOutputStream dataOutput;
     private DataInputStream dataInput;

@@ -55,6 +55,8 @@ public class ChangeUserItemProperty extends AppCompatActivity {
     Spinner outer_category_spinner;
     ArrayAdapter outer_category_adapter;
     int state=0;
+    private String IP_ADDRESS=getString(R.string.IP);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Intent intent=getIntent();
@@ -62,7 +64,7 @@ public class ChangeUserItemProperty extends AppCompatActivity {
         Log.e("category",category);
         ID=intent.getStringExtra("ID");
         GetData get_stored_values_task=new GetData();
-        get_stored_values_task.execute("http://52.79.59.24/getUserItemProperty.php?CATEGORY="+category+"&ID="+ID);
+        get_stored_values_task.execute("http://"+IP_ADDRESS+"/getUserItemProperty.php?CATEGORY="+category+"&ID="+ID);
 
         super.onCreate(savedInstanceState);
 
@@ -101,7 +103,7 @@ public class ChangeUserItemProperty extends AppCompatActivity {
                         } else if (top_category.equals("맨투맨") || top_category.equals("셔츠") || top_category.equals("후드티")) {
                             temperature_section = "3";
                         }
-                        url = "http://52.79.59.24/changeInfo.php?CASE=top&TOP_SLEEVE=" + top_sleeve_length + "&TOP_PRINT=" + top_print + "&TOP_CATEGORY=" + top_category + "&TEMP=" + temperature_section + "&ID=" + ID;
+                        url = "http://"+IP_ADDRESS+"/changeInfo.php?CASE=top&TOP_SLEEVE=" + top_sleeve_length + "&TOP_PRINT=" + top_print + "&TOP_CATEGORY=" + top_category + "&TEMP=" + temperature_section + "&ID=" + ID;
                         UpdateData task = new UpdateData();
                         task.execute(url);
                     }
@@ -137,7 +139,7 @@ public class ChangeUserItemProperty extends AppCompatActivity {
                         }
                         bottom_category = bottom_category_spinner.getSelectedItem().toString();
                         bottom_fit = bottom_fit_spinner.getSelectedItem().toString();
-                        url = "http://52.79.59.24/changeInfo.php?CASE=bottom&BOTTOM_LENGTH=" + bottom_length + "&BOTTOM_CATEGORY=" + bottom_category + "&BOTTOM_FIT=" + bottom_fit + "&TEMP=" + temperature_section + "&ID=" + ID ;
+                        url = "http://"+IP_ADDRESS+"/changeInfo.php?CASE=bottom&BOTTOM_LENGTH=" + bottom_length + "&BOTTOM_CATEGORY=" + bottom_category + "&BOTTOM_FIT=" + bottom_fit + "&TEMP=" + temperature_section + "&ID=" + ID ;
                         UpdateData task = new UpdateData();
                         task.execute(url);
                     }
@@ -164,7 +166,7 @@ public class ChangeUserItemProperty extends AppCompatActivity {
                         } else if (outer_category.equals("롱패딩")) {
                             temperature_section = "7";
                         }
-                        url = "http://52.79.59.24/changeInfo.php?CASE=outer&OUTER_CATEGORY=" + outer_category + "&TEMP=" + temperature_section + "&ID=" + ID;
+                        url = "http://"+IP_ADDRESS+"/changeInfo.php?CASE=outer&OUTER_CATEGORY=" + outer_category + "&TEMP=" + temperature_section + "&ID=" + ID;
                         UpdateData task = new UpdateData();
                         task.execute(url);
                     }

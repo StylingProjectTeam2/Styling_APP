@@ -21,11 +21,15 @@ import java.util.ArrayList;
 
 public class UserRecAdapter extends BaseAdapter {
 
+    //private String IP_ADDRESS=getString(R.string.IP);
+
     private Context context;
     private ArrayList<ListItem> listItems = new ArrayList<ListItem>();
     public UserRecAdapter(Context context) {
         this.context = context;
     }
+
+    private String IP_ADDRESS=context.getString(R.string.IP);
 
     @Override
     public int getCount() {
