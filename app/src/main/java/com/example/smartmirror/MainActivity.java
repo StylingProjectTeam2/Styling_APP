@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements Button.OnClickLis
         private  double temp= 0;
 
         public static Socket socket;
-        public static String ip = "172.16.17.242";
+        public static String ip = "172.16.17.242"; // TODO: 라즈베리파이 ip
         private static final int GPS_ENABLE_REQUEST_CODE = 2001;
         private static final int PERMISSIONS_REQUEST_CODE = 100;
         String[] REQUIRED_PERMISSIONS = {Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION};

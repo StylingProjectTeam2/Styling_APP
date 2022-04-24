@@ -58,7 +58,8 @@ public class ListAdapter extends BaseAdapter {
 
     String rec_case; // musinsa or user's clothes
 
-    private String IP_ADDRESS=context.getString(R.string.IP);
+    private String IP_ADDRESS="54.180.67.155";
+    //private String IP_ADDRESS=context.getString(R.string.IP);
 
     FragmentManager fragmentManager;
     private FragmentTransaction transaction;

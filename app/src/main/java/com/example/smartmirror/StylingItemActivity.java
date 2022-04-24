@@ -41,8 +41,8 @@ public class StylingItemActivity extends AppCompatActivity {
 
     String ID;
     String styling;
-    private String IP_ADDRESS=getString(R.string.IP);
-
+    //private String IP_ADDRESS=getString(R.string.IP);
+    private String IP_ADDRESS="54.180.67.155";
     String TAG="php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {

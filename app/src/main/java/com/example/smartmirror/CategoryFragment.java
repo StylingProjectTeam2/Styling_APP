@@ -35,7 +35,8 @@ public class CategoryFragment extends Fragment {
     ListView categoryList;
     ListItem listItem;
     ListAdapter adapter;
-    private String IP_ADDRESS=getString(R.string.IP);
+    private String IP_ADDRESS="54.180.67.155";
+    //private String IP_ADDRESS=getString(R.string.IP);
     String temp;
     String TAG="php";
     StylingItemAdapter s_adapter;
@@ -85,8 +86,8 @@ public class CategoryFragment extends Fragment {
                 adapter.styling=styling;
                 //adapter.setStyling(styling);
                 GetData task=new GetData();
-                task.execute("http://"+IP_ADDRESS+"/getData2.php","6",styling);
-
+                //task.execute("http://"+IP_ADDRESS+"/getData2.php","6",styling);
+                task.execute("http://"+IP_ADDRESS+"/getData2.php",temp,styling);
 
 
             }
@@ -101,7 +102,8 @@ public class CategoryFragment extends Fragment {
                 Log.e("button-styling",styling);
                 adapter.styling=styling;
                 GetData task=new GetData();
-                task.execute("http://"+IP_ADDRESS+"/getData2.php","2",styling);
+                //task.execute("http://"+IP_ADDRESS+"/getData2.php","2",styling);
+                task.execute("http://"+IP_ADDRESS+"/getData2.php",temp,styling);
             }
         });
         // casual
@@ -114,8 +116,8 @@ public class CategoryFragment extends Fragment {
                 Log.e("button-styling",styling);
                 adapter.styling=styling;
                 GetData task=new GetData();
-                task.execute("http://"+IP_ADDRESS+"/getData2.php","7",styling);
-
+                //task.execute("http://"+IP_ADDRESS+"/getData2.php","7",styling);
+                task.execute("http://"+IP_ADDRESS+"/getData2.php",temp,styling);
             }
         });
         // street
@@ -126,7 +128,8 @@ public class CategoryFragment extends Fragment {
                 Log.e("button-styling",styling);
                 adapter.styling=styling;
                 GetData task=new GetData();
-                task.execute("http://"+IP_ADDRESS+"/getData2.php","5",styling);
+                //task.execute("http://"+IP_ADDRESS+"/getData2.php","5",styling);
+                task.execute("http://"+IP_ADDRESS+"/getData2.php",temp,styling);
             }
         });
         // chic
@@ -138,7 +141,8 @@ public class CategoryFragment extends Fragment {
                 Log.e("button-styling",styling);
                 adapter.styling=styling;
                 GetData task=new GetData();
-                task.execute("http://"+IP_ADDRESS+"/getData2.php","5",styling);
+                //task.execute("http://"+IP_ADDRESS+"/getData2.php","5",styling);
+                task.execute("http://"+IP_ADDRESS+"/getData2.php",temp,styling);
             }
         });
         // sport
@@ -150,7 +154,8 @@ public class CategoryFragment extends Fragment {
                 Log.e("button-styling",styling);
                 adapter.styling=styling;
                 GetData task=new GetData();
-                task.execute("http://"+IP_ADDRESS+"/getData2.php","5",styling);
+                //task.execute("http://"+IP_ADDRESS+"/getData2.php","5",styling);
+                task.execute("http://"+IP_ADDRESS+"/getData2.php",temp,styling);
             }
         });
         // romantic
@@ -162,7 +167,8 @@ public class CategoryFragment extends Fragment {
                 Log.e("button-styling",styling);
                 adapter.styling=styling;
                 GetData task=new GetData();
-                task.execute("http://"+IP_ADDRESS+"/getData2.php","5",styling);
+                //task.execute("http://"+IP_ADDRESS+"/getData2.php","5",styling);
+                task.execute("http://"+IP_ADDRESS+"/getData2.php",temp,styling);
             }
         });
         // girlish
@@ -174,8 +180,8 @@ public class CategoryFragment extends Fragment {
                 Log.e("button-styling",styling);
                 adapter.styling=styling;
                 GetData task=new GetData();
-                task.execute("http://"+IP_ADDRESS+"/getData2.php","5",styling);
-
+                //task.execute("http://"+IP_ADDRESS+"/getData2.php","5",styling);
+                task.execute("http://"+IP_ADDRESS+"/getData2.php",temp,styling);
             }
         });
 

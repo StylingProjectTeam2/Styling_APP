@@ -80,11 +80,11 @@ public class UserRecAdapter extends BaseAdapter {
                 String address;
                 if(!listItem.getOuter().equals(""))
                 {
-                    address="http://52.79.59.24/user_clothes_fitting.php?CASE=3&OUTER="+outer+"&TOP="+top+"&BOTTOM="+bottom; // TODO: user_clothes_fitting.php 파일이 없음,,,,,,,,,
+                    address="http://"+IP_ADDRESS+"/user_clothes_fitting.php?CASE=3&OUTER="+outer+"&TOP="+top+"&BOTTOM="+bottom; // TODO: user_clothes_fitting.php 파일이 없음,,,,,,,,,
                 }
                 else
                 {
-                    address="http://52.79.59.24/userClothesFitting.php?CASE=2&TOP="+top+"&BOTTOM="+bottom;
+                    address="http://"+IP_ADDRESS+"/userClothesFitting.php?CASE=2&TOP="+top+"&BOTTOM="+bottom;
                 }
                 virtualfittingThread fitting_thread = new virtualfittingThread();
                 try {

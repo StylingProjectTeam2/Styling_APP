@@ -32,7 +32,8 @@ public class ItemFragment2 extends Fragment {
     ListView itemList;
     ListItem listItem;
     UserItemAdapter adapter;
-    private String IP_ADDRESS=getString(R.string.IP);
+    private String IP_ADDRESS="54.180.67.155";
+    //private String IP_ADDRESS=getString(R.string.IP);
     String TAG="php";
     String cate;
     @Nullable
