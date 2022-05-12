@@ -20,8 +20,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class StylingActivity extends AppCompatActivity {
 
-    private BottomNavigationView botNav;
-
     private CategoryFragment fragmentA;
     private ItemFragment fragmentB;
 
@@ -45,27 +43,7 @@ public class StylingActivity extends AppCompatActivity {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.mainFragment, fragmentA).commitAllowingStateLoss();
-        botNav = findViewById(R.id.botNav);
-
-        botNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                FragmentTransaction transaction = fragmentManager.beginTransaction();
-                switch (item.getItemId()) {
-                    case R.id.nav_category:
-                        transaction.replace(R.id.mainFragment, fragmentA).commitAllowingStateLoss();
-                        break;
-                    case R.id.nav_item:
-                        transaction.replace(R.id.mainFragment, fragmentB).commitAllowingStateLoss();
-                        break;
-                }
-
-                return true;
-            }
-        });
 
     }
-
-
 
 }
